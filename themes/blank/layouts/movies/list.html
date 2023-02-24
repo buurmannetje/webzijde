@@ -1,0 +1,16 @@
+{{define "main"}} 
+{{ range (.Data.Pages.GroupByDate "2006") }}
+
+<h3>{{ .Key }}</h3>
+
+{{ range .Pages }}
+<movies>
+  
+<div>{{.Title}} {{.Params.rating}}</div>
+<time>{{.Date.Format "2006-01-02"}}</time>
+
+</movies>
+{{ end }}
+
+{{ end }}
+{{ end }}

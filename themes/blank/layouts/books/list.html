@@ -1,0 +1,18 @@
+{{define "main"}} 
+{{ range (.Data.Pages.GroupByDate "2006") }}
+
+<h3>{{ .Key }}</h3>
+
+<books>
+{{ range .Pages }}
+    
+    <time>{{ .Date.Format "02.01.2006" }}</time>
+    <div>{{.Title}}</div>
+    <div>{{.Params.author}}</div>
+    <div>{{.Params.rating}}</div>
+        
+{{ end }}
+</books>
+
+{{ end }}
+{{ end }}

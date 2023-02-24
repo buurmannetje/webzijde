@@ -1,0 +1,10 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "janwillem.net"
+theme = "blank"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[outputs]
+home = [ "HTML", "JSON" ]

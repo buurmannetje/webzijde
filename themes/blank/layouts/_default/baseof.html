@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=icon href=data:,>
+<title>{{ .Title }}</title>
+<style type="text/css">
+@font-face {
+	font-family: 'Blanco';
+	src: url('https://cdn.janwillem.net/fonts/Blanco-Regular.eot');
+	src: url('https://cdn.janwillem.net/fonts/Blanco-Regular.eot?#iefix') format('embedded-opentype'), url('https://cdn.janwillem.net/fonts/Blanco-Regular.woff2') format('woff2'), url('https://cdn.janwillem.net/fonts/Blanco-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: 'Blanco';
+	src: url('https://cdn.janwillem.net/fonts/Blanco-Italic.eot');
+	src: url('https://cdn.janwillem.net/fonts/Blanco-Italic.eot?#iefix') format('embedded-opentype'), url('https://cdn.janwillem.net/fonts/Blanco-Italic.woff2') format('woff2'), url('https://cdn.janwillem.net/fonts/Blanco-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+}
+body {
+  font-family: "Blanco", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.45;
+  margin: auto; 
+  max-width: 36rem;
+  padding: 2rem 1rem;
+  color: #212529;
+}
+header {
+  display: block;
+  margin: 0 0 3rem;
+  font-size: 15px;
+}
+header a {
+  color: #212529;
+  margin-right: .5rem;
+  border: none;
+}
+.logo {
+  color: #006fff;
+  border: none;
+  text-decoration: none;
+}
+h1, h3, date, time, header, .logo {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+h3 {
+  margin: 2rem 0 1rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  font-size: small;
+  color: #93918f;
+}
+figcaption p {
+  margin: .3rem 0 0 0;
+}
+.nodisc {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+  grid-gap: .5rem;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+.nodisc li {
+  text-decoration: none;
+  padding: .3rem .3rem .3rem 0.7rem;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid #ececec;
+}
+.nodisc a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+hr {
+  margin: 2rem 0;
+  max-width: 3rem;
+  border: none;
+  border-top: 1px solid #d5d5d5;
+}
+date {
+  display: block;
+  font-size: .7rem;
+  color: #93918f;
+}
+postlink {
+  display: block;
+  margin: 0 0 1rem;
+}
+postlink date {
+  display: block;
+  font-size: .7rem;
+  color: #93918f;
+  margin: 0;
+}
+time {
+  font-size: .7rem;
+  color: #93918f;
+}
+books div:nth-child(4n) {
+  padding-bottom: 1rem;
+}
+movies {
+  display: block;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  grid-column-gap: .5rem;
+  grid-row-gap: 2rem;
+}
+pre {
+  font-size: 13px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding: 1rem;
+  border-left: 4px solid #006fff;
+}
+.footnotes {
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<main>
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+</main>
+</body>
+</html>
