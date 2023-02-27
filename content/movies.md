@@ -1,6 +1,6 @@
 ---
-title: "Movies"
+title: movies
 layout: page
 ---
 
-{{< movielist data="movies" >}}
+{{< movies-list >}}
