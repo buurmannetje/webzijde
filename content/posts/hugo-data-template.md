@@ -14,7 +14,6 @@ For this example I am creating a list of movies I've watched.
 I need 3 files:
 
 ### /content/movies.md
-
 ```
 ---
 title: movies
@@ -25,7 +24,6 @@ layout: page
 ```
 
 ### /data/watched.yml
-
 ```
 - title: "Requiem for a Dream"
   date: "03.01.2023"
@@ -37,7 +35,6 @@ layout: page
 ```
 
 ### themes/your_theme_name/layouts/shortcodes/movies-list.html
-
 ```
 {{ range .Site.Data.watched }}
 <movies>
