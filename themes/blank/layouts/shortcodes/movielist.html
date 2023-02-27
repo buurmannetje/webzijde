@@ -2,8 +2,8 @@
 
 <ul>
   {{ range .movies }}
-    <li>{{ .Name }}</li>
-    <li>{{ .Rating }}</li>
+    <li>{{ .Params.name }}</li>
+    <li>{{ .Params.rating }}</li>
   {{ end }}
 </ul>
 
