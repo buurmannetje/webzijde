@@ -13,12 +13,11 @@ For this example I am creating a list of movies I've watched.
 
 I need 3 files:
 
-### /content/movies.md
-```
----
-title: movies
-layout: page
----
+- /content/movies.md
+- /data/watched.yml
+- /themes/your_theme/layouts/shortcodes/movies-list.html
+
+
 
 {{< movies-list >}}
 ```
