@@ -11,11 +11,13 @@ Hugo has a great option to create a list in YAML format and then show that data 
 
 For this example I am creating a list of movies I've watched.
 
-I need 3 files:
+We need 3 files:
 
 - /content/movies.md
 - /data/watched.yml
 - /themes/your_theme/layouts/shortcodes/movies-list.html
+
+/content/movies.md is the actual /movies page on the website that you visit to see the list. So this page can have an intro and some images if you like. It's as simple as crating a normal content page in Hugo, as long as you put this string somewhere in the page: {{< movies-list >}}
 
 ### /data/watched.yml
 ```
