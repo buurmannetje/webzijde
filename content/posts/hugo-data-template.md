@@ -17,11 +17,6 @@ I need 3 files:
 - /data/watched.yml
 - /themes/your_theme/layouts/shortcodes/movies-list.html
 
-
-
-{{< movies-list >}}
-```
-
 ### /data/watched.yml
 ```
 - title: "Requiem for a Dream"
