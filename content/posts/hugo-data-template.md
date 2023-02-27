@@ -7,59 +7,8 @@ tags:
 - code
 ---
 
-Hugo has a great option to create a list in YAML format and then show that data in a template. Here is the simplest way to do this.
+Hugo has a great option to create a list in YAML format and then show that data in a template. I created a <a href="https://github.com/buurmannetje/Hugo-Examples/tree/main/Data%20Templates">GitHub repository</a> with the files you need.
 
-For this example I am creating a list of movies I've watched.
+If you add these files to your Hugo website and visit yourwebsite.com/movies, you will find a list of movies you've watched.
 
-We need 3 files:
-
-- /content/movies.md
-- /data/watched.yml
-- /themes/your_theme/layouts/shortcodes/movies-list.html
-
-### /content/movies.md
-
-is the actual **/movies** page on the website that you visit to see the list. So this page can have an intro and some images if you like. It's as simple as creating a normal content page in Hugo, as long as you put this string somewhere in the page: { { < movies-list > } }
-
-### /data/watched.yml
-
-is the data file where we are putting in actual movies that you've watched. For this example there are 3 fields: title, date and rating. You can add as many fields that you want, as long as you include them in the template to render later on.
-
-```
-- title: "Requiem for a Dream"
-  date: "03.01.2023"
-  rating: ★★★★
-
-- title: "The Batman"
-  date: "01.01.2023"
-  rating: ★★★
-```
-
-### themes/your_theme_name/layouts/shortcodes/movies-list.html
-
-is the template that renders the data file above to an actual list.
-
-```
-{{ range .Site.Data.watched }}
-<movies>
-  <div>{{.date}}</div>
-  <div>{{.title}}</div>
-  <div>{{.rating}}</div>
-</movies>
-{{ end }}
-```
-
-If you have added extra fields in the /data/watched.yml file above, don't forget to add them in the list above via: 
-```
-{{ range .Site.Data.watched }}
-<movies>
-  <div>{{.date}}</div>
-  <div>{{.title}}</div>
-  <div>{{.rating}}</div>
-  <div>{{.this_can_be_extra_data}}</div>
-  <div>{{.something_something}}</div>
-</movies>
-{{ end }}
-```
-
-You can now visit https://yourwebsiteaddress.com/movies and there is your list!
+If you want to add a movie to the list, you can open /data/watched.yml and add the movie.
