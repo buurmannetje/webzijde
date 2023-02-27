@@ -48,3 +48,5 @@ is the template that renders the data file above to an actual list. If you have 
 </movies>
 {{ end }}
 ```
+
+You can now visit https://yourwebsiteaddress.com/movies and there is your list!
