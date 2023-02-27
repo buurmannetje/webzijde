@@ -7,8 +7,6 @@ tags:
 - health
 ---
 
-My goals for 2023. I will keep the list updated as the year progresses.
-
 - Go camping at least once
 - Visit my brother and his family in Dubai
 - Save money
