@@ -16,7 +16,7 @@
   {{ $data := index $.Site.Data.movies $.Params.data }}
   {{ range $data }}
     <tr>
-      {{ partial "books" . }}
+      {{ partial "movies" . }}
     </tr>
   {{ end }}
   </tbody>
