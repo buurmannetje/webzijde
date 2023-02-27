@@ -25,7 +25,6 @@ is the actual **/movies** page on the website that you visit to see the list. So
 
 is the data file where we are putting in actual movies that you've watched. For this example there are 3 fields: title, date and rating. You can add as many fields that you want, as long as you include them in the template to render later on.
 
-<monospace>/data/watched.yml</monospace>
 ```
 - title: "Requiem for a Dream"
   date: "03.01.2023"
@@ -40,7 +39,6 @@ is the data file where we are putting in actual movies that you've watched. For 
 
 is the template that renders the data file above to an actual list. 
 
-<monospace>/themes/your_theme_name/layouts/shortcodes/movies-list.html</monospace>
 ```
 {{ range .Site.Data.watched }}
 <movies>
