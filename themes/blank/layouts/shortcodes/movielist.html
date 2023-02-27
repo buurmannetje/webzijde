@@ -1,24 +1,10 @@
-{{ if .IsNamedParams }}
-<table id="book-table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Author</th>
-      <th>Publisher</th>
-      <th>Rating</th>
-      <th>Date Read</th>
-      <th>Pages</th>
-      <th>Fiction?</th>
-      <th>Female Author?</th>
-    </tr>
-  </thead>
-  <tbody>
-  {{ $data := index $.Site.Data.movies $.Params.data }}
-  {{ range $data }}
-    <tr>
-      {{ partial "movies" . }}
-    </tr>
+{{ range $.Site.Data.movies }}
+
+<ul>
+  {{ range .movies }}
+    <li>{{ .Name }}</li>
+    <li>{{ .Rating }}</li>
   {{ end }}
-  </tbody>
-<table>
-{{- end -}}
+</ul>
+
+{{ end }}
