@@ -17,7 +17,7 @@ We need 3 files:
 - /data/watched.yml
 - /themes/your_theme/layouts/shortcodes/movies-list.html
 
-**/content/movies.md** is the actual **/movies** page on the website that you visit to see the list. So this page can have an intro and some images if you like. It's as simple as crating a normal content page in Hugo, as long as you put this string somewhere in the page: <pre>{{< movies-list >}}</pre>
+**/content/movies.md** is the actual **/movies** page on the website that you visit to see the list. So this page can have an intro and some images if you like. It's as simple as crating a normal content page in Hugo, as long as you put this string somewhere in the page: { { < movies-list > } }
 
 ### /data/watched.yml
 ```
