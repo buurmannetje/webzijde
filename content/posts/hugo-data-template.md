@@ -37,7 +37,7 @@ is the data file where we are putting in actual movies that you've watched. For 
 
 ### themes/your_theme_name/layouts/shortcodes/movies-list.html
 
-is the template that renders the data file above to an actual list. 
+is the template that renders the data file above to an actual list. If you have added extra fields in the data file above, don't forget to add theme in the list below via: <div>{{.your_extra_data}}</div>
 
 ```
 {{ range .Site.Data.watched }}
