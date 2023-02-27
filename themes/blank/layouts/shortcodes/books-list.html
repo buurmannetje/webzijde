@@ -1,0 +1,10 @@
+<books>
+{{ range .Site.Data.read }}
+<date>
+  {{.date}}
+</date>
+{{.title}}<br>
+{{.author}}<br>
+{{.rating}}<br>
+{{ end }}
+</books>
