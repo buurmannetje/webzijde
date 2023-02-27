@@ -19,7 +19,9 @@ We need 3 files:
 
 **/content/movies.md** is the actual **/movies** page on the website that you visit to see the list. So this page can have an intro and some images if you like. It's as simple as crating a normal content page in Hugo, as long as you put this string somewhere in the page: { { < movies-list > } }
 
-### /data/watched.yml
+**/data/watched.yml** is the data file where we are putting in actual movies that you've watched. For this example there are 3 fields: title, date and rating. You can add as many fields that you want, as long as we include them in the template to render later on.
+
+/data/watched.yml
 ```
 - title: "Requiem for a Dream"
   date: "03.01.2023"
