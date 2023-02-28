@@ -1,5 +1,5 @@
 ---
-title: "Hugo Search"
+title: "Hugo search"
 slug: hugo-search
 date: 2023-02-10
 tags:
