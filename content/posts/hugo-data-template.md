@@ -1,5 +1,5 @@
 ---
-title: "Hugo Data Template"
+title: "Hugo data template"
 slug: hugo-data-template
 date: 2023-02-27
 tags:
