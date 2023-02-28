@@ -6,130 +6,68 @@
 <link rel=icon href=data:,>
 <title>{{ .Title }}</title>
 <style type="text/css">
-@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,700);
 body {
-  margin: 30px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  max-width: 600px;
+ margin:30px;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+ max-width:600px
 }
-header {
-  display: block;
-  margin: 0 0 3rem;
-}
-header a {
-  color: #212529;
-  margin-right: .5rem;
-  border: none;
-}
-.logo {
-  color: #006fff;
-  border: none;
-  text-decoration: none;
+.header a {
+ color:rgba(0,0,0,.5);
+ text-decoration:none
 }
 h1 {
-  margin: 0;
-  line-height: 1.2;
-}
-h3 {
-  margin: 2rem 0 1rem;
+ font-size:30px;
+ margin:.7rem 0 1rem
 }
 a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dotted;
+ color:rgba(0,0,255,.45)
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
-figure {
-  margin: 0;
-}
-figcaption {
-  font-size: small;
-  color: #93918f;
-}
-figcaption p {
-  margin: .3rem 0 0 0;
+ul {
+ margin:0 0 1.4rem
 }
 .nodisc {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
-  grid-gap: .5rem;
-  margin-bottom: .5rem;
-  padding: 0;
+ margin:0 0 1.6rem;
+ padding:0;
+ list-style:none
 }
-.nodisc li {
-  text-decoration: none;
-  padding: .3rem .3rem .3rem 0.7rem;
-  background-color: #f4f4f4;
-  border-radius: 4px;
-  display: inline-block;
-  border: 1px solid #ececec;
+li {
+ margin-top:10px
 }
-.nodisc a {
-  color: inherit;
-  text-decoration: none;
-  border: none;
+p {
+ line-height:1.5em;
+ margin:0 0 1rem
 }
-hr {
-  margin: 2rem 0;
-  max-width: 3rem;
-  border: none;
-  border-top: 1px solid #d5d5d5;
+img {
+ max-width:95%
 }
 date {
-  display: block;
-  font-size: .7rem;
-  color: #93918f;
+ font-size:small
 }
-books date {
-  display: block;
-  margin: 2rem 0 0;
+code {
+ background:#ddd;
+ padding:2px;
+ line-height:1.3em;
+ font-size:1.3em
 }
-postlink {
-  display: block;
-  margin: 0 0 1rem;
+blockquote {
+ margin:0 0 1.3rem;
+ padding:0;
+ font-style:italic
 }
-postlink date {
-  display: block;
-  font-size: .7rem;
-  color: #93918f;
-  margin: 0;
+hr {
+ border:0;
+ border-top:1px solid #eee;
+ width:10rem;
+ margin:0
 }
-time {
-  font-size: .7rem;
-  color: #93918f;
+footer {
+ font-size:small;
+ display:block;
+ border-top:1px solid #eee;
+ padding:1.5rem 0
 }
-books div:nth-child(4n) {
-  padding-bottom: 1rem;
-}
-visited > div {
-  display: block;
-  padding-bottom: 1rem;
-  line-height: 1.2;
-}
-movies {
-  display: block;
-  padding-bottom: 1rem;
-  line-height: 1.2;
-}
-photos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  list-style: none;
-  grid-column-gap: .5rem;
-  grid-row-gap: 2rem;
-}
-pre {
-  font-size: 13px;
-  background: #f4f4f4;
-  border-radius: 5px;
-  padding: 1rem;
-  border-left: 4px solid #006fff;
-}
-.footnotes {
-  font-size: small;
+footer a {
+ margin:0 .5rem 0 0
 }
 </style>
 </head>
