@@ -1,3 +1,19 @@
 <header>
-  <a class="logo" href="/">janwillem.net</a> <a href="/about">about</a> <a href="/more">more...</a>
+  
+  {{ if .IsHome }}
+  
+  <nav>
+    <a href="/" class="logo">hello.</a>
+    <a href="/about">about</a>
+    <a href="/uses">uses</a>
+  </nav>
+
+  {{ else }}
+  
+  <nav>
+    <a href="/">&#8592;</a>
+  </nav>
+
+  {{ end }}
+
 </header>
