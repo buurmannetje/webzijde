@@ -2,9 +2,14 @@
 
 <h3>Posts with the {{ .Title }} tag</h3>
 
+<ul class="nodisc">
 {{ range .Pages }}
 
+<li>
 {{ .Title }} <date><a href="{{ .Permalink }}">{{.Date.Format "2006-01-02"}}</a></date>
+</li>
 
 {{ end }}
+</ul>
+
 {{ end }}
