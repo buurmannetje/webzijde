@@ -2,6 +2,7 @@
 title: "Hugo data template"
 slug: hugo-data-template
 date: 2023-02-27
+description: "How to use data templates in Hugo."
 tags:
 - hugo
 - code
